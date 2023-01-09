@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="component.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+
+<body>
+
+  <main class="main__container">
+    <section class="main_container_text">
+      <h1 class="main__container__h1">Learn to code by watching others</h1>
+      <p class="main__container__p">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.
+      </p>
+    </section>
+
+    <section class="main__container__form">
+      <button id="offer__button">
+        <div class="span__container">
+          <span class="try__text">Try it free 7 days</span> <span class="month__text">then $20/mo. thereafter</span>
+        </div>
+      </button>
+
+      <form action="" class="form__container">
+
+        <div class="form__item__container">
+
+          <div class="form__item">
+            <input type="text" placeholder="First Name" id="nameForm">
+
+            <img src="./icon-error.svg" alt="error" class="error__icon">
+          </div>
+
+          <p class="warning-text-red">
+            First Name cannot be empty
+          </p>
+
+        </div>
+
+        <div class="form__item__container">
+          <div class="form__item">
+            <input type="text" placeholder="Last Name" id="lasNameForm">
+            <img src="./icon-error.svg" alt="error" class="error__icon">
+          </div>
+
+          <p class="warning-text-red">
+            Last Name cannot be empty
+          </p>
+
+        </div>
+
+        <div class="form__item__container">
+          <div class="form__item">
+            <input type="email" placeholder="Email Address" id="emailForm">
+            <img src="./icon-error.svg" alt="error" class="error__icon">
+          </div>
+          <p class="warning-text-red">
+            Looks like this is not an email
+          </p>
+        </div>
+
+        <div class="form__item__container">
+          <div class="form__item">
+            <input type="password" placeholder="Password" id="passwordForm">
+            <img src="./icon-error.svg" alt="error" class="error__icon">
+          </div>
+
+          <p class="warning-text-red">
+            Password can no be empty
+          </p>
+
+        </div>
+
+        <button class="form__button">CLAIM YOUR FREE TRIAL</button>
+      
+        <p class="form__paragraph">By clicking the button, you are agreeing to our <span class="paragraph__span">Terms and Services</span></p>
+        
+      </form>
+    </section>
+
+    <script src="activeform.js"></script>
+    
+  </main>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Eduardo Ruiz</a>.
+    </p>
+  </footer>
+</body>
+</html>
